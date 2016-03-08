@@ -2642,3 +2642,999 @@ ERROR [2016-03-07 18:17:21,679] (ProjectPackageList.java:generateComponents:483)
  WARN [2016-03-07 18:17:27,095] (ProjectService.java:handleDeployResult:1917) - Save failed!
  WARN [2016-03-07 18:17:27,105] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
  WARN [2016-03-07 18:17:27,140] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ERROR [2016-03-07 19:41:59,955] (BaseComponentMultiPageEditorPart.java:doSave:203) - Unable to open Apex Code Editor
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.jface.viewers.StructuredSelection.<init>(StructuredSelection.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.widgets.ComboWidget.setValue(ComboWidget.java:59)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.setFormValues(ApexTriggerPropertySheet.java:82)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.syncFromMetadata(ApexTriggerPropertySheet.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.MetadataFormPage.doSave(MetadataFormPage.java:105)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart$2.execute(BaseComponentMultiPageEditorPart.java:191)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart.doSave(BaseComponentMultiPageEditorPart.java:201)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:150)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:276)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:1812)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1809)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:284)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:263)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:155)
+	at org.eclipse.ui.internal.WorkbenchPage.saveSaveable(WorkbenchPage.java:3777)
+	at org.eclipse.ui.internal.WorkbenchWindow$7.save(WorkbenchWindow.java:532)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.savePart(PartServiceImpl.java:1210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1068)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$5(StackRenderer.java:1051)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$11.close(StackRenderer.java:945)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1833)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+ WARN [2016-03-07 19:42:00,108] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:42:03,792] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) triggers/Question1Trigger.trigger: In field: specific ids - no ApexTrigger named Question1Trigger found
+ (2) triggers/Question1Trigger.trigger-meta.xml: In field: specific ids - no ApexTrigger named Question1Trigger found
+ WARN [2016-03-07 19:42:03,852] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 19:42:03,884] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 19:42:03,888] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/Question1Trigger.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 19:42:03,905] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 19:42:03,941] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/Question1Trigger.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 19:42:04,047] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 19:42:07,036] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 19:42:07,048] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:42:07,053] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 19:42:42,824] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-07 19:42:45,151] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-07 19:42:48,433] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:42:48,488] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 19:42:51,271] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 19:42:51,281] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:42:51,328] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 19:43:43,845] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-07 19:43:45,511] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-07 19:44:36,993] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-07 19:44:39,267] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-07 19:44:42,575] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:44:42,600] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 19:44:44,134] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 19:44:44,144] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:44:44,144] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 19:47:46,107] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-07 19:47:50,803] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-07 19:47:52,195] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:47:52,216] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 19:47:55,304] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 19:47:55,314] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:47:55,314] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 19:51:02,436] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-07 19:51:04,690] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-07 19:51:20,832] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:51:20,861] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 19:51:29,373] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 19:51:29,378] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 19:51:29,397] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ERROR [2016-03-07 21:05:31,992] (BaseComponentMultiPageEditorPart.java:doSave:203) - Unable to open Apex Code Editor
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.jface.viewers.StructuredSelection.<init>(StructuredSelection.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.widgets.ComboWidget.setValue(ComboWidget.java:59)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.setFormValues(ApexTriggerPropertySheet.java:82)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.syncFromMetadata(ApexTriggerPropertySheet.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.MetadataFormPage.doSave(MetadataFormPage.java:105)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart$2.execute(BaseComponentMultiPageEditorPart.java:191)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart.doSave(BaseComponentMultiPageEditorPart.java:201)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:150)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:276)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:1812)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1809)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:284)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:263)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:155)
+	at org.eclipse.ui.internal.WorkbenchPage.saveSaveable(WorkbenchPage.java:3777)
+	at org.eclipse.ui.internal.WorkbenchWindow$7.save(WorkbenchWindow.java:532)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.savePart(PartServiceImpl.java:1210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1068)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$5(StackRenderer.java:1051)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$11.close(StackRenderer.java:945)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1833)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+ WARN [2016-03-07 21:05:32,168] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 21:05:34,334] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 21:05:34,349] (Component.java:hasRemoteChanged:967) - Conflict found! Attribute compare of local and remote ApexTrigger 'triggers/Question1Trigger.trigger-meta.xml' [unpackaged] are NOT equal
+ WARN [2016-03-07 21:05:34,353] (BuilderPayload.java:handleConflict:386) - Conflict found while preparing to save 'Question1Trigger.trigger-meta.xml' to server.  Remote instance has been updated since last save or sync.  Use the Synchronize Perspective to resolve the conflict.
+ WARN [2016-03-07 21:05:34,357] (Component.java:hasRemoteChanged:967) - Conflict found! Attribute compare of local and remote ApexTrigger 'triggers/Question1Trigger.trigger' [unpackaged] are NOT equal
+ WARN [2016-03-07 21:05:34,362] (BuilderPayload.java:handleConflict:386) - Conflict found while preparing to save 'Question1Trigger.trigger' to server.  Remote instance has been updated since last save or sync.  Use the Synchronize Perspective to resolve the conflict.
+ WARN [2016-03-07 22:17:31,649] (ComponentFactory.java:getCompositeComponentFromComponent:1098) - Unable to load existing 'triggers/OpportunityTrigger.trigger-meta.xml' from project - associated component's file resource is null.  Assuming new.
+ WARN [2016-03-07 22:17:31,681] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:17:32,805] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'Certificate': Unable to get bean for id 'Certificate'
+ WARN [2016-03-07 22:17:32,815] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'AuraDefinitionBundle': Unable to get bean for id 'AuraDefinitionBundle'
+ WARN [2016-03-07 22:17:32,815] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+ WARN [2016-03-07 22:17:32,856] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'NamedCredential': Unable to get bean for id 'NamedCredential'
+ WARN [2016-03-07 22:17:32,862] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'UiPlugin': Unable to get bean for id 'UiPlugin'
+ WARN [2016-03-07 22:17:32,872] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'CustomFeedFilter': Unable to get bean for id 'CustomFeedFilter'
+ WARN [2016-03-07 22:17:32,882] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'FlowDefinition': Unable to get bean for id 'FlowDefinition'
+ WARN [2016-03-07 22:17:32,892] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'MatchingRules': Unable to get bean for id 'MatchingRules'
+ WARN [2016-03-07 22:17:32,898] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ChannelLayout': Unable to get bean for id 'ChannelLayout'
+ WARN [2016-03-07 22:17:32,903] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'SharingRules': Unable to get bean for id 'SharingRules'
+ WARN [2016-03-07 22:17:32,910] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'DelegateGroup': Unable to get bean for id 'DelegateGroup'
+ WARN [2016-03-07 22:17:32,916] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'CorsWhitelistOrigin': Unable to get bean for id 'CorsWhitelistOrigin'
+ WARN [2016-03-07 22:17:32,921] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ActionLinkGroupTemplate': Unable to get bean for id 'ActionLinkGroupTemplate'
+ WARN [2016-03-07 22:17:32,926] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'TransactionSecurityPolicy': Unable to get bean for id 'TransactionSecurityPolicy'
+ WARN [2016-03-07 22:17:32,931] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'SynonymDictionary': Unable to get bean for id 'SynonymDictionary'
+ WARN [2016-03-07 22:17:32,937] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'PathAssistant': Unable to get bean for id 'PathAssistant'
+ WARN [2016-03-07 22:17:32,942] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'PlatformCachePartition': Unable to get bean for id 'PlatformCachePartition'
+ WARN [2016-03-07 22:17:33,979] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:17:36,629] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:17:36,639] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:17:36,639] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:17:36,649] (Utils.java:loadDocument:800) - Unable to load document: C:\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\SoqlandSosl\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+ WARN [2016-03-07 22:17:36,690] (ComponentController.java:run:425) - Unable to update cache with new component Apex Trigger - cache is not found
+ WARN [2016-03-07 22:17:36,908] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:17:38,681] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) triggers/OpportunityTrigger.trigger: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ (2) triggers/OpportunityTrigger.trigger-meta.xml: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ WARN [2016-03-07 22:17:38,691] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 22:17:38,733] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:17:38,749] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:17:38,752] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:17:38,772] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:17:38,777] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:17:42,025] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:17:42,025] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:17:42,035] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:18:06,032] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:18:10,693] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:18:13,066] (BaseRefactorController.java:testDeploy:146) - Component 'package.xml' failed test delete: 'No package.xml found'. will be deleted locally only.
+ WARN [2016-03-07 22:18:13,109] (ProjectPackageList.java:removeComponentByFilePath:959) - Failed to remove package.xml from delete manifest
+ WARN [2016-03-07 22:18:15,383] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ERROR [2016-03-07 22:18:15,383] (DeleteRefactorController.java:performRemoteDelete:278) - Remote delete failed with the following message. Will only delete locally.
+  package.xml: No package.xml found
+ WARN [2016-03-07 22:18:53,192] (ComponentFactory.java:getCompositeComponentFromComponent:1098) - Unable to load existing 'triggers/OpportunityTrigger.trigger-meta.xml' from project - associated component's file resource is null.  Assuming new.
+ WARN [2016-03-07 22:18:53,220] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:18:54,108] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'Certificate': Unable to get bean for id 'Certificate'
+ WARN [2016-03-07 22:18:54,118] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'AuraDefinitionBundle': Unable to get bean for id 'AuraDefinitionBundle'
+ WARN [2016-03-07 22:18:54,118] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+ WARN [2016-03-07 22:18:54,128] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'NamedCredential': Unable to get bean for id 'NamedCredential'
+ WARN [2016-03-07 22:18:54,139] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'UiPlugin': Unable to get bean for id 'UiPlugin'
+ WARN [2016-03-07 22:18:54,146] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'CustomFeedFilter': Unable to get bean for id 'CustomFeedFilter'
+ WARN [2016-03-07 22:18:54,154] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'FlowDefinition': Unable to get bean for id 'FlowDefinition'
+ WARN [2016-03-07 22:18:54,163] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'MatchingRules': Unable to get bean for id 'MatchingRules'
+ WARN [2016-03-07 22:18:54,168] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ChannelLayout': Unable to get bean for id 'ChannelLayout'
+ WARN [2016-03-07 22:18:54,174] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'SharingRules': Unable to get bean for id 'SharingRules'
+ WARN [2016-03-07 22:18:54,180] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'DelegateGroup': Unable to get bean for id 'DelegateGroup'
+ WARN [2016-03-07 22:18:54,186] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'CorsWhitelistOrigin': Unable to get bean for id 'CorsWhitelistOrigin'
+ WARN [2016-03-07 22:18:54,191] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ActionLinkGroupTemplate': Unable to get bean for id 'ActionLinkGroupTemplate'
+ WARN [2016-03-07 22:18:54,197] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'TransactionSecurityPolicy': Unable to get bean for id 'TransactionSecurityPolicy'
+ WARN [2016-03-07 22:18:54,202] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'SynonymDictionary': Unable to get bean for id 'SynonymDictionary'
+ WARN [2016-03-07 22:18:54,207] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'PathAssistant': Unable to get bean for id 'PathAssistant'
+ WARN [2016-03-07 22:18:54,213] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'PlatformCachePartition': Unable to get bean for id 'PlatformCachePartition'
+ WARN [2016-03-07 22:18:54,625] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:18:57,217] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:18:57,217] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:18:57,227] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:18:57,227] (Utils.java:loadDocument:800) - Unable to load document: C:\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\SoqlandSosl\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+ WARN [2016-03-07 22:18:57,349] (ComponentController.java:run:425) - Unable to update cache with new component Apex Trigger - cache is not found
+ WARN [2016-03-07 22:18:57,365] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:18:59,601] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) triggers/OpportunityTrigger.trigger: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ (2) triggers/OpportunityTrigger.trigger-meta.xml: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ WARN [2016-03-07 22:18:59,601] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 22:18:59,621] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:18:59,651] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:18:59,655] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:18:59,660] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:18:59,665] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:19:01,905] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:19:01,905] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:19:01,945] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ERROR [2016-03-07 22:19:20,884] (BaseComponentMultiPageEditorPart.java:doSave:203) - Unable to open Apex Code Editor
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.jface.viewers.StructuredSelection.<init>(StructuredSelection.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.widgets.ComboWidget.setValue(ComboWidget.java:59)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.setFormValues(ApexTriggerPropertySheet.java:82)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.syncFromMetadata(ApexTriggerPropertySheet.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.MetadataFormPage.doSave(MetadataFormPage.java:105)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart$2.execute(BaseComponentMultiPageEditorPart.java:191)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart.doSave(BaseComponentMultiPageEditorPart.java:201)
+	at org.eclipse.ui.internal.DefaultSaveable.doSave(DefaultSaveable.java:54)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:214)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:348)
+	at org.eclipse.ui.internal.WorkbenchPage$11.run(WorkbenchPage.java:3633)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:276)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:1812)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1809)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:284)
+	at org.eclipse.ui.internal.WorkbenchPage.saveAll(WorkbenchPage.java:3644)
+	at org.eclipse.ui.internal.WorkbenchPage.saveAllEditors(WorkbenchPage.java:3440)
+	at org.eclipse.ui.internal.handlers.SaveAllHandler.execute(SaveAllHandler.java:47)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:420)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:157)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+ WARN [2016-03-07 22:19:20,996] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:19:23,683] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) triggers/OpportunityTrigger.trigger: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ (2) triggers/OpportunityTrigger.trigger-meta.xml: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ WARN [2016-03-07 22:19:23,693] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 22:19:23,703] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:19:23,713] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:19:23,723] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:19:23,728] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:19:23,734] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:19:26,313] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:19:26,313] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:19:26,323] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:19:27,325] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:19:30,011] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) classes/ChildToParent.cls: In field: specific ids - no ApexClass named ChildToParent found
+ (2) classes/ChildToParent.cls-meta.xml: In field: specific ids - no ApexClass named ChildToParent found
+ WARN [2016-03-07 22:19:30,021] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 22:19:30,031] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:19:30,031] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/ChildToParent.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:19:30,041] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:19:30,041] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/ChildToParent.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:19:30,051] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:19:32,770] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:19:32,780] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:19:32,780] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:20:26,053] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-07 22:20:28,413] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-07 22:20:32,458] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:20:32,495] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:20:34,766] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:20:34,766] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:20:34,815] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:21:38,713] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:21:39,965] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:21:42,107] (BaseRefactorController.java:testDeploy:146) - Component 'package.xml' failed test delete: 'No package.xml found'. will be deleted locally only.
+ WARN [2016-03-07 22:21:42,117] (ProjectPackageList.java:removeComponentByFilePath:959) - Failed to remove package.xml from delete manifest
+ WARN [2016-03-07 22:21:45,994] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ERROR [2016-03-07 22:21:46,004] (DeleteRefactorController.java:performRemoteDelete:278) - Remote delete failed with the following message. Will only delete locally.
+  package.xml: No package.xml found
+ WARN [2016-03-07 22:42:04,605] (ComponentFactory.java:getCompositeComponentFromComponent:1098) - Unable to load existing 'triggers/DuplicateRecord.trigger-meta.xml' from project - associated component's file resource is null.  Assuming new.
+ WARN [2016-03-07 22:42:04,625] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:42:05,339] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'Certificate': Unable to get bean for id 'Certificate'
+ WARN [2016-03-07 22:42:05,344] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'AuraDefinitionBundle': Unable to get bean for id 'AuraDefinitionBundle'
+ WARN [2016-03-07 22:42:05,350] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+ WARN [2016-03-07 22:42:05,355] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'NamedCredential': Unable to get bean for id 'NamedCredential'
+ WARN [2016-03-07 22:42:05,364] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'UiPlugin': Unable to get bean for id 'UiPlugin'
+ WARN [2016-03-07 22:42:05,371] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'CustomFeedFilter': Unable to get bean for id 'CustomFeedFilter'
+ WARN [2016-03-07 22:42:05,379] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'FlowDefinition': Unable to get bean for id 'FlowDefinition'
+ WARN [2016-03-07 22:42:05,388] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'MatchingRules': Unable to get bean for id 'MatchingRules'
+ WARN [2016-03-07 22:42:05,394] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ChannelLayout': Unable to get bean for id 'ChannelLayout'
+ WARN [2016-03-07 22:42:05,399] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'SharingRules': Unable to get bean for id 'SharingRules'
+ WARN [2016-03-07 22:42:05,411] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'DelegateGroup': Unable to get bean for id 'DelegateGroup'
+ WARN [2016-03-07 22:42:05,430] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'CorsWhitelistOrigin': Unable to get bean for id 'CorsWhitelistOrigin'
+ WARN [2016-03-07 22:42:05,434] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'ActionLinkGroupTemplate': Unable to get bean for id 'ActionLinkGroupTemplate'
+ WARN [2016-03-07 22:42:05,439] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'TransactionSecurityPolicy': Unable to get bean for id 'TransactionSecurityPolicy'
+ WARN [2016-03-07 22:42:05,444] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'SynonymDictionary': Unable to get bean for id 'SynonymDictionary'
+ WARN [2016-03-07 22:42:05,449] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'PathAssistant': Unable to get bean for id 'PathAssistant'
+ WARN [2016-03-07 22:42:05,454] (ComponentFactory.java:getComponentBean:1149) - Unable to get component for id 'PlatformCachePartition': Unable to get bean for id 'PlatformCachePartition'
+ WARN [2016-03-07 22:42:05,767] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:42:14,171] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:42:14,178] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:42:14,183] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-07 22:42:14,190] (Utils.java:loadDocument:800) - Unable to load document: C:\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\SoqlandSosl\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+ WARN [2016-03-07 22:42:14,197] (ComponentController.java:run:425) - Unable to update cache with new component Apex Trigger - cache is not found
+ WARN [2016-03-07 22:42:14,309] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:42:16,732] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) triggers/DuplicateRecord.trigger: In field: specific ids - no ApexTrigger named DuplicateRecord found
+ (2) triggers/DuplicateRecord.trigger-meta.xml: In field: specific ids - no ApexTrigger named DuplicateRecord found
+ WARN [2016-03-07 22:42:16,737] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 22:42:16,756] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:42:16,759] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/DuplicateRecord.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:42:16,763] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:42:16,767] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/DuplicateRecord.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:42:16,777] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:42:18,111] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:42:18,117] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:42:18,156] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ERROR [2016-03-07 22:42:57,568] (BaseComponentMultiPageEditorPart.java:doSave:203) - Unable to open Apex Code Editor
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.jface.viewers.StructuredSelection.<init>(StructuredSelection.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.widgets.ComboWidget.setValue(ComboWidget.java:59)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.setFormValues(ApexTriggerPropertySheet.java:82)
+	at com.salesforce.ide.ui.editors.apex.propertysheets.ApexTriggerPropertySheet.syncFromMetadata(ApexTriggerPropertySheet.java:74)
+	at com.salesforce.ide.ui.editors.properysheets.MetadataFormPage.doSave(MetadataFormPage.java:105)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart$2.execute(BaseComponentMultiPageEditorPart.java:191)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at com.salesforce.ide.ui.editors.internal.BaseComponentMultiPageEditorPart.doSave(BaseComponentMultiPageEditorPart.java:201)
+	at org.eclipse.ui.internal.DefaultSaveable.doSave(DefaultSaveable.java:54)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:214)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:348)
+	at org.eclipse.ui.internal.WorkbenchPage$11.run(WorkbenchPage.java:3633)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:276)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:1812)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1809)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:284)
+	at org.eclipse.ui.internal.WorkbenchPage.saveAll(WorkbenchPage.java:3644)
+	at org.eclipse.ui.internal.WorkbenchPage.saveAllEditors(WorkbenchPage.java:3440)
+	at org.eclipse.ui.internal.handlers.SaveAllHandler.execute(SaveAllHandler.java:47)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:420)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:157)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+ WARN [2016-03-07 22:42:57,727] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:42:59,252] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) triggers/DuplicateRecord.trigger: In field: specific ids - no ApexTrigger named DuplicateRecord found
+ (2) triggers/DuplicateRecord.trigger-meta.xml: In field: specific ids - no ApexTrigger named DuplicateRecord found
+ WARN [2016-03-07 22:42:59,262] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+ WARN [2016-03-07 22:42:59,301] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:42:59,333] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/DuplicateRecord.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:42:59,348] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+ WARN [2016-03-07 22:42:59,382] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/DuplicateRecord.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+ WARN [2016-03-07 22:42:59,390] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-07 22:43:00,597] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-07 22:43:00,602] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-07 22:43:00,638] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-08 12:02:18,354] (BaseRetryAspect.java:isLoginExceptionRetryable:115) - Login evaluation deemed exception not retry-able:
+ UnknownHostException: login.salesforce.com
+ WARN [2016-03-08 12:02:18,374] (BaseRetryAspect.java:isConnectionExceptionRetryable:150) - Connection evaluation deemed exception not retry-able:
+ UnknownHostException: login.salesforce.com
+ WARN [2016-03-08 12:02:18,384] (ProxyAspect.java:setConnectionProxy:79) - Unable to get connection for project
+ WARN [2016-03-08 12:02:18,384] (ProxyAspect.java:setConnectionProxy:90) - Unable to set proxy settings - could not get Connection from joinpoint
+ WARN [2016-03-08 12:02:18,673] (BaseRetryAspect.java:isLoginExceptionRetryable:115) - Login evaluation deemed exception not retry-able:
+ UnknownHostException: login.salesforce.com
+ WARN [2016-03-08 12:02:18,678] (BaseRetryAspect.java:isConnectionExceptionRetryable:150) - Connection evaluation deemed exception not retry-able:
+ UnknownHostException: login.salesforce.com
+ WARN [2016-03-08 12:03:03,475] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ERROR [2016-03-08 12:03:12,290] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+ WARN [2016-03-08 12:03:14,312] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-08 12:03:14,383] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ WARN [2016-03-08 12:03:22,105] (ProjectService.java:handleDeployResult:1917) - Save failed!
+ WARN [2016-03-08 12:03:22,115] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-08 12:03:22,115] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+ WARN [2016-03-08 12:15:34,146] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+ WARN [2016-03-08 12:15:35,876] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ERROR [2016-03-08 12:15:46,058] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:34) - ForceRemoteException occurred while attempting to perform a metadata operation
+ WARN [2016-03-08 12:15:46,078] (BaseRetryAspect.java:isExceptionRetryable:217) - General evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ERROR [2016-03-08 12:15:46,088] (PackageDeployService.java:deployWork:303) - Unable to retrieve components: UnknownHostException: ap2.salesforce.com
+ERROR [2016-03-08 12:15:46,115] (BaseRefactorController.java:testDeploy:169) - Unable to perform server delete
+com.salesforce.ide.core.services.DeployException: java.net.UnknownHostException: ap2.salesforce.com
+	at com.salesforce.ide.core.services.PackageDeployService.deployWork(PackageDeployService.java:304)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:189)
+	at com.salesforce.ide.core.services.PackageDeployService.deployDelete(PackageDeployService.java:181)
+	at com.salesforce.ide.core.services.PackageDeployService.deployDelete(PackageDeployService.java:169)
+	at com.salesforce.ide.ui.refactoring.BaseRefactorController.testDeploy(BaseRefactorController.java:134)
+	at com.salesforce.ide.ui.refactoring.DeleteRefactorController.performRemoteDelete(DeleteRefactorController.java:242)
+	at com.salesforce.ide.ui.refactoring.DeleteChange.isValid(DeleteChange.java:120)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.isValid(CompositeChange.java:239)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	at com.sforce.soap.metadata.MetadataConnection.describeMetadata(MetadataConnection.java:491)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:252)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:261)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$FastClassByCGLIB$$9404e285.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.MetadataOperationsRetryAspect.metadataOperationsRetry(MetadataOperationsRetryAspect.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$EnhancerByCGLIB$$d9577c82.describeMetadata(<generated>)
+	at com.salesforce.ide.core.services.MetadataService.getDescribeMetadata(MetadataService.java:61)
+	at com.salesforce.ide.core.services.PackageDeployService.adjustDeployOptions(PackageDeployService.java:313)
+	at com.salesforce.ide.core.services.PackageDeployService.deployWork(PackageDeployService.java:277)
+	... 15 more
+ WARN [2016-03-08 12:15:46,160] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+ERROR [2016-03-08 12:15:46,296] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:34) - ForceRemoteException occurred while attempting to perform a metadata operation
+ WARN [2016-03-08 12:15:46,302] (BaseRetryAspect.java:isExceptionRetryable:217) - General evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ERROR [2016-03-08 12:15:46,307] (PackageDeployService.java:deployWork:303) - Unable to retrieve components: UnknownHostException: ap2.salesforce.com
+ERROR [2016-03-08 12:15:46,336] (DeleteChange.java:isValid:123) - Unable to perform server delete
+com.salesforce.ide.core.services.DeployException: java.net.UnknownHostException: ap2.salesforce.com
+	at com.salesforce.ide.core.services.PackageDeployService.deployWork(PackageDeployService.java:304)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:189)
+	at com.salesforce.ide.core.services.PackageDeployService.deployDelete(PackageDeployService.java:181)
+	at com.salesforce.ide.core.services.PackageDeployService.deployDelete(PackageDeployService.java:169)
+	at com.salesforce.ide.ui.refactoring.DeleteRefactorController.performRemoteDelete(DeleteRefactorController.java:254)
+	at com.salesforce.ide.ui.refactoring.DeleteChange.isValid(DeleteChange.java:120)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.isValid(CompositeChange.java:239)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	at com.sforce.soap.metadata.MetadataConnection.describeMetadata(MetadataConnection.java:491)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:252)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:261)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$FastClassByCGLIB$$9404e285.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.MetadataOperationsRetryAspect.metadataOperationsRetry(MetadataOperationsRetryAspect.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$EnhancerByCGLIB$$d9577c82.describeMetadata(<generated>)
+	at com.salesforce.ide.core.services.MetadataService.getDescribeMetadata(MetadataService.java:61)
+	at com.salesforce.ide.core.services.PackageDeployService.adjustDeployOptions(PackageDeployService.java:313)
+	at com.salesforce.ide.core.services.PackageDeployService.deployWork(PackageDeployService.java:277)
+	... 14 more
+ WARN [2016-03-08 12:53:10,385] (BaseRetryAspect.java:isLoginExceptionRetryable:115) - Login evaluation deemed exception not retry-able:
+ UnknownHostException: login.salesforce.com
+ WARN [2016-03-08 12:53:10,407] (BaseRetryAspect.java:isConnectionExceptionRetryable:150) - Connection evaluation deemed exception not retry-able:
+ UnknownHostException: login.salesforce.com
+ERROR [2016-03-08 12:53:10,412] (SchemaBrowser.java:createPages:174) - Unable to open Schema Browser
+com.salesforce.ide.core.remote.ForceConnectionException: Unable to create connection to server 'login.salesforce.com':
+
+Unknown host: login.salesforce.com
+
+Please verify your proxy settings.
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.handleConnectionException(ForceExceptionUtils.java:74)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:301)
+	at com.salesforce.ide.core.remote.Connection.relogin(Connection.java:430)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.LoginRetryAspect.loginRetry(LoginRetryAspect.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$3d9abb38.relogin(<generated>)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:142)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:157)
+	at com.salesforce.ide.schemabrowser.ui.tableviewer.QueryTableViewer.addChildControls(QueryTableViewer.java:116)
+	at com.salesforce.ide.schemabrowser.ui.tableviewer.QueryTableViewer.initialize(QueryTableViewer.java:94)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createComposite2(SchemaEditorComposite.java:186)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createSashForm1(SchemaEditorComposite.java:156)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createComposite(SchemaEditorComposite.java:118)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createSashForm(SchemaEditorComposite.java:101)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.initialize(SchemaEditorComposite.java:61)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.<init>(SchemaEditorComposite.java:56)
+	at com.salesforce.ide.schemabrowser.ui.SchemaBrowser.createPage(SchemaBrowser.java:187)
+	at com.salesforce.ide.schemabrowser.ui.SchemaBrowser.createPages(SchemaBrowser.java:171)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:358)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:142)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:323)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:857)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:333)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:71)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:53)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1096)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:66)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:576)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:543)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:605)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:322)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1028)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3120)
+	at org.eclipse.ui.internal.WorkbenchPage.access$21(WorkbenchPage.java:3042)
+	at org.eclipse.ui.internal.WorkbenchPage$8.run(WorkbenchPage.java:3024)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3020)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2984)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2975)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:534)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:493)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:360)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:167)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:268)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:233)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:275)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:251)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:376)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:538)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:47)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:866)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:864)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1152)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1256)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:275)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:269)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:309)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: com.sforce.ws.ConnectionException: Failed to send request to https://login.salesforce.com/services/Soap/u/36.0
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:121)
+	at com.sforce.soap.partner.wsc.PartnerConnection.login(PartnerConnection.java:1950)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:254)
+	... 137 more
+Caused by: java.net.UnknownHostException: login.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	... 139 more
+ WARN [2016-03-08 12:54:59,065] (BaseRetryAspect.java:isConnectionExceptionRetryable:150) - Connection evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ WARN [2016-03-08 12:54:59,065] (BaseRetryAspect.java:isOperationsExceptionRetryable:178) - Operataions evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ WARN [2016-03-08 12:55:08,896] (BaseRetryAspect.java:isConnectionExceptionRetryable:150) - Connection evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ WARN [2016-03-08 12:55:08,907] (BaseRetryAspect.java:isOperationsExceptionRetryable:178) - Operataions evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ WARN [2016-03-08 12:55:50,665] (BaseRetryAspect.java:isConnectionExceptionRetryable:150) - Connection evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ WARN [2016-03-08 12:55:50,675] (BaseRetryAspect.java:isOperationsExceptionRetryable:178) - Operataions evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+ERROR [2016-03-08 12:55:50,675] (SchemaBrowser.java:createPages:174) - Unable to open Schema Browser
+com.salesforce.ide.core.remote.ForceConnectionException: Unable to create connection to server 'ap2.salesforce.com':
+
+Unknown host: ap2.salesforce.com
+
+Please verify your proxy settings.
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.handleConnectionException(ForceExceptionUtils.java:74)
+	at com.salesforce.ide.core.remote.Connection.query(Connection.java:791)
+	at com.salesforce.ide.core.remote.Connection.query(Connection.java:766)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.CrudOperationsRetryAspect.crudOperationRetry(CrudOperationsRetryAspect.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$3d9abb38.query(<generated>)
+	at com.salesforce.ide.schemabrowser.ui.tableviewer.QueryTableViewer.addChildControls(QueryTableViewer.java:117)
+	at com.salesforce.ide.schemabrowser.ui.tableviewer.QueryTableViewer.initialize(QueryTableViewer.java:94)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createComposite2(SchemaEditorComposite.java:186)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createSashForm1(SchemaEditorComposite.java:156)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createComposite(SchemaEditorComposite.java:118)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.createSashForm(SchemaEditorComposite.java:101)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.initialize(SchemaEditorComposite.java:61)
+	at com.salesforce.ide.schemabrowser.ui.SchemaEditorComposite.<init>(SchemaEditorComposite.java:56)
+	at com.salesforce.ide.schemabrowser.ui.SchemaBrowser.createPage(SchemaBrowser.java:187)
+	at com.salesforce.ide.schemabrowser.ui.SchemaBrowser.createPages(SchemaBrowser.java:171)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:358)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:142)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:323)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:857)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:333)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:71)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:53)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1096)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:66)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:576)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:543)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:605)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:322)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1028)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3120)
+	at org.eclipse.ui.internal.WorkbenchPage.access$21(WorkbenchPage.java:3042)
+	at org.eclipse.ui.internal.WorkbenchPage$8.run(WorkbenchPage.java:3024)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3020)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2984)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2975)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:534)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:493)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:360)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:167)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:268)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:233)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:275)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:251)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:376)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:538)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:47)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:866)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:864)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1152)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1256)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:275)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:269)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:309)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: com.sforce.ws.ConnectionException: Failed to send request to https://ap2.salesforce.com/services/Soap/u/36.0/00D28000001Ej5e
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:121)
+	at com.sforce.soap.partner.wsc.PartnerConnection.query(PartnerConnection.java:1432)
+	at com.salesforce.ide.core.remote.Connection.query(Connection.java:782)
+	... 135 more
+Caused by: java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	... 137 more

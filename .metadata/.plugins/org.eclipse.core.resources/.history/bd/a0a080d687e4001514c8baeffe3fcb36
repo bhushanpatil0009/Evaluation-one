@@ -1,0 +1,3 @@
+trigger DuplicateRecord on Contact (before insert) {
+    
+}

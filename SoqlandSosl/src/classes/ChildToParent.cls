@@ -1,3 +1,3 @@
-public with sharing class ChildToParent {
+ public with sharing class ChildToParent {
     
 }

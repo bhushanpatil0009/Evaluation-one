@@ -84,7 +84,7 @@ public with sharing class SoqlAndSosl{
 	public void question5()
 	{
 	  Map<id,Account> accountUser = new Map<id,Account>();
-	  list<Account> accounts =[SELECT name,BillingState FROM Account WHERE BillingState NOT in ('TX','NC') ORDER BY BillingState desc  LIMIT 10000];
+	  list<Account> accounts =[SELECT name,BillingState FROM Account WHERE BillingState != 'TX;NC' ORDER BY BillingState desc  LIMIT 10000];
 	  for(Account acc : accounts)
 	  {
 	 

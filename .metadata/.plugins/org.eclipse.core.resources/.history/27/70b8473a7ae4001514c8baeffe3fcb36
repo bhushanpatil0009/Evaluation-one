@@ -1,0 +1,48 @@
+trigger Question1Trigger on Employee__c (after insert, after update, before insert, before update,before delete,after delete,after undelete)
+{
+	
+	if(trigger.isBefore && trigger.isinsert)
+	{
+	  	List<Employee__c> emps = trigger.new;
+	 	system.debug(emps);
+	}
+    if(trigger.isBefore && trigger.isupdate)
+	{
+	  	Map<id,Employee__c> emp = trigger.old.map;
+	    system.debug(emp);
+	}
+	if(trigger.isBefore && trigger.isdelete)
+	{
+	  	Map<id,Employee__c> emp = trigger.old.map;
+	    system.debug(emp);
+	}
+	
+    
+    
+    if(trigger.isAfter && trigger.isinsert)
+	{
+		Map<id,Employee__c>emp = trigger.new.map;
+	 	system.debug(emp);
+	 	system.debug(trigger.new.map);
+	}
+    
+    if(trigger.isAfter && trigger.isupdate)
+	{
+		//Employee__c emp = trigger.new.map;
+	 	//system.debug(emp);
+	 	system.debug(trigger.new.map);
+	}   
+	if(trigger.isAfter && trigger.isdelete)
+	{
+		//Employee__c emp = trigger.new.map;
+	 	//system.debug(emp);
+	 	system.debug(trigger.new.map);
+	}
+	if(trigger.isAfter && trigger.isundelete)
+	{
+		//Employee__c emp = trigger.new.map;
+	 	//system.debug(emp);
+	 	system.debug(trigger.new.map);
+	}   
+	
+}
