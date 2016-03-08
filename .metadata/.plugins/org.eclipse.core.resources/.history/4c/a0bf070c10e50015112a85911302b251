@@ -1,0 +1,10 @@
+ public with sharing class ChildToParent {
+ 	
+ 	
+ 	List<Account> accountToContact = [SELECT Name, (SELECT LastName FROM Contacts) FROM Account WHERE Industry = 'media'];
+ 	
+ 	system.debug(accountToContact);
+
+ 	
+    
+}

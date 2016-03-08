@@ -2753,3 +2753,153 @@ Caused by: java.net.UnknownHostException: ap2.salesforce.com
 	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
 	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
 	... 137 more
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:21.254
+!MESSAGE  WARN [2016-03-08 14:53:21,254] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.412
+!MESSAGE  WARN [2016-03-08 14:53:25,412] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) classes/AggregateFunction.cls: In field: specific ids - no ApexClass named AggregateFunction found
+ (2) classes/AggregateFunction.cls-meta.xml: In field: specific ids - no ApexClass named AggregateFunction found
+ (3) classes/ChildToParent.cls: In field: specific ids - no ApexClass named ChildToParent found
+ (4) classes/ChildToParent.cls-meta.xml: In field: specific ids - no ApexClass named ChildToParent found
+ (5) triggers/DuplicateRecord.trigger: In field: specific ids - no ApexTrigger named DuplicateRecord found
+ (6) triggers/DuplicateRecord.trigger-meta.xml: In field: specific ids - no ApexTrigger named DuplicateRecord found
+ (7) triggers/OpportunityTrigger.trigger: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+ (8) triggers/OpportunityTrigger.trigger-meta.xml: In field: specific ids - no ApexTrigger named OpportunityTrigger found
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.422
+!MESSAGE  WARN [2016-03-08 14:53:25,422] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [2] does not equal request count [10].
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.507
+!MESSAGE  WARN [2016-03-08 14:53:25,506] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.519
+!MESSAGE  WARN [2016-03-08 14:53:25,517] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'classes/AggregateFunction.cls-meta.xml'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.522
+!MESSAGE  WARN [2016-03-08 14:53:25,522] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/AggregateFunction.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.526
+!MESSAGE  WARN [2016-03-08 14:53:25,526] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'classes/AggregateFunction.cls'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.530
+!MESSAGE  WARN [2016-03-08 14:53:25,530] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/AggregateFunction.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.535
+!MESSAGE  WARN [2016-03-08 14:53:25,534] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'classes/ChildToParent.cls-meta.xml'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.539
+!MESSAGE  WARN [2016-03-08 14:53:25,538] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/ChildToParent.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.544
+!MESSAGE  WARN [2016-03-08 14:53:25,543] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'classes/ChildToParent.cls'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.548
+!MESSAGE  WARN [2016-03-08 14:53:25,547] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/ChildToParent.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.552
+!MESSAGE  WARN [2016-03-08 14:53:25,552] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'triggers/DuplicateRecord.trigger-meta.xml'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.556
+!MESSAGE  WARN [2016-03-08 14:53:25,556] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/DuplicateRecord.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.561
+!MESSAGE  WARN [2016-03-08 14:53:25,561] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'triggers/DuplicateRecord.trigger'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.601
+!MESSAGE  WARN [2016-03-08 14:53:25,600] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/DuplicateRecord.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.604
+!MESSAGE  WARN [2016-03-08 14:53:25,604] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'triggers/OpportunityTrigger.trigger-meta.xml'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.608
+!MESSAGE  WARN [2016-03-08 14:53:25,607] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.611
+!MESSAGE  WARN [2016-03-08 14:53:25,611] (ProjectPackageList.java:getComponentByFilePath:743) - Did not find component for 'triggers/OpportunityTrigger.trigger'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.616
+!MESSAGE  WARN [2016-03-08 14:53:25,615] (BuilderPayload.java:conflictCheck:317) - ApexTrigger 'triggers/OpportunityTrigger.trigger' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:25.621
+!MESSAGE  WARN [2016-03-08 14:53:25,620] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:31.242
+!MESSAGE  WARN [2016-03-08 14:53:31,242] (ProjectService.java:handleDeployResult:1917) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:31.252
+!MESSAGE  WARN [2016-03-08 14:53:31,252] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:53:31.252
+!MESSAGE  WARN [2016-03-08 14:53:31,252] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:57:59.566
+!MESSAGE  WARN [2016-03-08 14:57:59,545] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.914
+!MESSAGE  WARN [2016-03-08 14:58:01,914] (BuilderPayload.java:filterComponentsInConflict:272) - Retrieve result contains problem messages:
+ (1) classes/ChildToParent.cls: In field: specific ids - no ApexClass named ChildToParent found
+ (2) classes/ChildToParent.cls-meta.xml: In field: specific ids - no ApexClass named ChildToParent found
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.914
+!MESSAGE  WARN [2016-03-08 14:58:01,914] (BuilderPayload.java:filterComponentsInConflict:276) - Remote retrieve result count [0] does not equal request count [2].
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.924
+!MESSAGE  WARN [2016-03-08 14:58:01,914] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.924
+!MESSAGE  WARN [2016-03-08 14:58:01,924] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/ChildToParent.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.924
+!MESSAGE  WARN [2016-03-08 14:58:01,924] (ProjectPackageList.java:getComponentByFilePath:725) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.934
+!MESSAGE  WARN [2016-03-08 14:58:01,934] (BuilderPayload.java:conflictCheck:317) - ApexClass 'classes/ChildToParent.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:01.934
+!MESSAGE  WARN [2016-03-08 14:58:01,934] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:03.271
+!MESSAGE  WARN [2016-03-08 14:58:03,271] (ProjectService.java:handleDeployResult:1917) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:03.281
+!MESSAGE  WARN [2016-03-08 14:58:03,281] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-08 14:58:03.281
+!MESSAGE  WARN [2016-03-08 14:58:03,281] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+

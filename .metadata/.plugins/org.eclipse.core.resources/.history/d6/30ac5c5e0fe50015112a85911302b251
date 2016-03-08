@@ -3,7 +3,7 @@ public with sharing class AggregateFunctions
  	public void question1()
   	{
   		system.debug('Question 1');
-   		List<AggregateResult> amountref =new List<AggregateResult>([Select sum(Amount) from Opportunity where CloseDate = This_Fiscal_Year]);
+   		List<AggregateResult> amountref =new List<AggregateResult>([Select sum(Amount) from Opportunity group by FiscalYear]);
    		Map<integer, List<AggregateResult>> newMap = new Map<integer,List<AggregateResult>>();
    		list<opportunity> cDate = [Select FiscalYear from Opportunity ];
    		newMap.put((cDate.get(1)).FiscalYear, amountref);
@@ -54,7 +54,7 @@ public with sharing class AggregateFunctions
   	
   	public void dmlQ3()
   	{
-  		/*Asset a = new Asset(Line_Item_Id__c='orig86475829299');
+  		Asset a = new Asset(Line_Item_Id__c='orig86475829299');
 		try
 		{
 			insert(a);
@@ -62,7 +62,7 @@ public with sharing class AggregateFunctions
 		catch (DmlException e) 
 		{
 	
-		} */
+		}
 	
 		Asset a = new Asset(Line_Item_Id__c='orig86475829299');
 		try 
