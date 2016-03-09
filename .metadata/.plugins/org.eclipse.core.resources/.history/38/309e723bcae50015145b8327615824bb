@@ -3,20 +3,17 @@ public with sharing class AggregateFunctions
  	public void question1()
   	{
   		system.debug('Question 1');
- 	
-   		List<AggregateResult> amountref =new List<AggregateResult>([Select sum(Amount),FiscalYear from Opportunity where CloseDate = This_Fiscal_Year And StageName in ('closed won','closed lost') group by FiscalYear ]);
-   		for(AggregateResult ag : amountref)
-   		{
-   		system.debug(ag);
-   		
-   		}
-   				
+   		List<AggregateResult> amountref =new List<AggregateResult>([Select sum(Amount) from Opportunity where CloseDate = This_Fiscal_Year]);
+   		Map<integer, List<AggregateResult>> newMap = new Map<integer,List<AggregateResult>>();
+   		list<opportunity> cDate = [Select FiscalYear from Opportunity ];
+   		newMap.put((cDate.get(1)).FiscalYear, amountref);
+  		 system.debug(newMap);
   	}    
   	
   	public void questino2()
   	{
   		system.debug('Question 2');
-  		set<AggregateResult> amountref =new set<AggregateResult>([SELECT  count(id),Name FROM lead GROUP BY leadsource HAVING COUNT(leadsource)>10]);
+  		List<AggregateResult> amountref =new List<AggregateResult>([SELECT  count(id) FROM lead GROUP BY leadsource HAVING COUNT(leadsource)>10]);
   		system.debug(amountref);
   	}
   	
@@ -41,27 +38,7 @@ public with sharing class AggregateFunctions
 		}
 		system.debug(mapLeadByStatusBySource);
   	}
-  	public void dmlQ1()
-  	{
-  		List<Lead> leadList = new List<Lead>();
-  		lead leadRef;
-  		for(Integer i=0;i<100;i++) 
-  		{
-      		leadRef = new Lead(Uniquen__c = 201 +i ,LastName='charlie'+i , Company='ST' , 
-            status='Open - Not Contacted');
-  			leadList.add(leadRef);
-  		}
-  
- 		try
-  		{
-   			insert leadList;
-   		}
-   		catch(Exception e)
-   		{
-  		 e.getMessage();
-  		}
-  		
-  	}
+  	
   	public void dmlQ2()
   	{
   	Account[] dAccts = [SELECT  Id, Name FROM Account Where Active__c='No' And CreatedDate = LAST_N_DAYS:90];

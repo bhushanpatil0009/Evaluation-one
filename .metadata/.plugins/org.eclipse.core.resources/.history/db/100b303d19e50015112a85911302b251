@@ -1,7 +1,7 @@
-trigger AccountTrigger on Account (after insert) 
+trigger OpportunityTrigger on Opportunity (after insert) 
 {
-    list<Account> Clone = new list<Account>(trigger.new);
-    Account newclone = new Account();
+    list<opportunity> Clone = new list<opportunity>(trigger.new);
+    opportunity newclone = new opportunity();
     
     for( opportunity temp : Clone)
     {
@@ -13,4 +13,4 @@ trigger AccountTrigger on Account (after insert)
     }
     
 }
-	
+    

@@ -5,18 +5,14 @@ public with sharing class AggregateFunctions
   		system.debug('Question 1');
  	
    		List<AggregateResult> amountref =new List<AggregateResult>([Select sum(Amount),FiscalYear from Opportunity where CloseDate = This_Fiscal_Year And StageName in ('closed won','closed lost') group by FiscalYear ]);
-   		for(AggregateResult ag : amountref)
-   		{
-   		system.debug(ag);
-   		
-   		}
-   				
+   		system.debug(amountref);
+		
   	}    
   	
   	public void questino2()
   	{
   		system.debug('Question 2');
-  		set<AggregateResult> amountref =new set<AggregateResult>([SELECT  count(id),Name FROM lead GROUP BY leadsource HAVING COUNT(leadsource)>10]);
+  		List<AggregateResult> amountref =new List<AggregateResult>([SELECT  count(id) FROM lead GROUP BY leadsource HAVING COUNT(leadsource)>10]);
   		system.debug(amountref);
   	}
   	
