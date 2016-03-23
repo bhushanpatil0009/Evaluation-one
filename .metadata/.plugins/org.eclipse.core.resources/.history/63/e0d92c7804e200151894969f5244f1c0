@@ -1,9 +1,0 @@
-public with sharing class AdvancedConcept5 {
-	
-	public void question5()
-	{
-	set<lead> leadSet = new set<lead>([SELECT id, Name, Available_Qty__c,Share_Detail__r.name  FROM Transcation__c ]);	
-	system.debug(leadset);
-	}
-    
-}

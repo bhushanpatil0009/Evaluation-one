@@ -56,7 +56,7 @@ public with sharing class SoqlAndSosl{
 	public void question4_1()
 	{
 	  Map<id,Account> accountUser = new Map<id,Account>();
-	  list<Account> accounts =[SELECT name,Enrollment_year__c FROM Account WHERE Enrollment_year__c INCLUDES ('2011','2012')];
+	  list<Account> accounts =[SELECT name,Enrollment_year__c FROM Account WHERE Enrollment_year__c IN ('2011','2012')];
 	  for(Account acc : accounts)
 	  {
 	 

@@ -1,3 +1,0 @@
-trigger Question1Trigger on Employee__c (after insert, after update, before insert, before update) {
-    
-}

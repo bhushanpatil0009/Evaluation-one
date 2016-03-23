@@ -1,7 +1,0 @@
-public abstract class OopsConcept2
-{
-
-public abstract void method();
-     
-
-}

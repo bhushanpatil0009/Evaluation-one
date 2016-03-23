@@ -1,8 +1,0 @@
-public with sharing class AdvancedConcept2
- {
-		public void question1()
-		{	
-		set<lead> leadSet = [SELECT company,name FROM lead];	
-		system.debug(leadset);
-		}
-}

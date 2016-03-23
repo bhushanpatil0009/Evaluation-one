@@ -1,9 +1,0 @@
-public with sharing class AdvancedConcept3
-{
-	Account[] customerAccount = new List<Account>();
-	Account customer = new Account(Name='eternus',BillingCity='jaipur');
-	customerAccount.add(customer);
-	
-	
-    
-}

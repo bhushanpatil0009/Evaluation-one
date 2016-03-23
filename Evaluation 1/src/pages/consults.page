@@ -1,0 +1,23 @@
+<apex:page standardController="Consults__c" extensions="ConsultsExtensions" action="{!insertOpportunity}">
+  <apex:form >
+      <apex:pageBlock >
+              <apex:pageBlockTable value="{!Consults__c}" var="consult">
+                  <apex:column value="{!consult.Name}"/>
+                  <apex:column value="{!consult.Account_Name__c}"/>
+                  <apex:column value="{!consult.Amount__c}"/>
+                  <apex:column value="{!consult.Close_Date__c}"/>
+                  <apex:column value="{!consult.Contract__c}"/>
+                  <apex:column value="{!consult.Description__c}"/>
+                  <apex:column value="{!consult.Expected_Revenue__c}"/>
+                  <apex:column value="{!consult.Lead_Source__c}"/>
+                  <apex:column value="{!consult.Opportunity_Owner__c}"/>
+                  <apex:column value="{!consult.Price_Book__c}"/>  
+                  <apex:column value="{!consult.Probability__c}"/>  
+                  <apex:column value="{!consult.Stage__c}"/>  
+                  <apex:column value="{!consult.Type__c}"/>      
+              </apex:pageBlockTable>
+                 <apex:commandButton value="Convert to opportunity" action="{!insertOpportunity}"/>
+      </apex:pageBlock>
+     
+  </apex:form>
+</apex:page>

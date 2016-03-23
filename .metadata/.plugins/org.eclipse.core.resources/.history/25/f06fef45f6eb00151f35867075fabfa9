@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+endpointApiVersion=29.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=www.salesforce.com
+httpsProtocol=true
+ideVersion=36.0
+keependpoint=false
+metadataFormatVersion=29.0
+namespacePrefix=
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE-6515259360139981698
+readTimeout=400
+username=bhushandevorg@gmail.com

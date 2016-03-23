@@ -1,0 +1,22 @@
+@isTest
+private class TestClassAccountManager 
+{
+	Account acc;
+	List<Account> AccountList = new List<Account>();
+	
+		for(integer i=1;i<=10;i++)
+   		{
+   			acc = new Line_Item__c(name='test'+i,site='https://google.com',AccountNumber='1234567890',Website='https://google.com',	Fax=12343);
+   			AccountList.add(acc);
+   		}
+		ApexPages.StandardController sc = new ApexPages.standardController();
+   		accountManagerExtension objExtension =  new accountManagerExtension(sc);
+   		
+   		list<Account> AccountList = objExtension.getLstAccount();
+   		system.debug(AccountList);
+   		
+   		list<Contact> ContactList = objExtension.getLstContact();
+   		system.debug(ContactList);
+   		
+   		
+}

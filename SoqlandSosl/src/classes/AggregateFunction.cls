@@ -3,13 +3,18 @@ public with sharing class AggregateFunctions
  	public void question1()
   	{
   		system.debug('Question 1');
- 	
-   		List<AggregateResult> amountref =new List<AggregateResult>([Select sum(Amount),FiscalYear from Opportunity where CloseDate = This_Fiscal_Year And StageName in ('closed won','closed lost') group by FiscalYear ]);
-   		for(AggregateResult ag : amountref)
+   		set<AggregateResult> amountref =new set<AggregateResult>([Select sum(Amount),FiscalYear from Opportunity where CloseDate = This_Fiscal_Year And StageName in ('closed won','closed lost') group by FiscalYear ]);
+   		map<string , AggregateResult>aggerateMap = new map<string , AggregateResult>();
+		
+
+		for(AggregateResult ag : amountref)
    		{
-   		system.debug(ag);
+		system.debug( ag.get('FiscalYear'));	
+		aggerateMap.put( string.valueOf(ag.get('FiscalYear')), ag);
    		
    		}
+		system.debug(aggerateMap);
+   		
    				
   	}    
   	
@@ -77,20 +82,17 @@ public with sharing class AggregateFunctions
   	
   	public void dmlQ3()
   	{
-  		/*Asset a = new Asset(Line_Item_Id__c='orig86475829299');
-		try
+		List<asset> assetList = new List<Asset>();
+		for(integer i=0;i<10;i++)
 		{
-			insert(a);
-		} 
-		catch (DmlException e) 
-		{
-	
-		} */
-	
-		Asset a = new Asset(Line_Item_Id__c='orig86475829299');
+				Asset a = new Asset(Line_Item_Id__c='orig86475829299');
+				assetList.Add(a);  
+		}
+		
 		try 
 		{
-		upsert(a);
+				
+		upsert(assetList);
 		} 
 		catch (DmlException e) 
 		{

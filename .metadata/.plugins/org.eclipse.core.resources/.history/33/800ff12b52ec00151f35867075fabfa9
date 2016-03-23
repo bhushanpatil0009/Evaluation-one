@@ -1,0 +1,39 @@
+@isTest
+private class TestClassAccountManager 
+{
+	static testMethod void validateTestClassAccountManager()
+    {
+		Account acc;
+		List<Account> AccList = new List<Account>();
+		
+	
+		for(integer i=1;i<=10;i++)
+   		{
+   			acc = new account(name='test'+i,site='https://google.com',AccountNumber='1234567890',Website='https://google.com',Fax='12343');
+   			AccList.add(acc);
+   		}
+   		insert(AccList);
+   		
+   		Test.setCurrentPageReference(new PageReference('Page.myPage')); 
+		System.currentPageReference().getParameters().put('id', idVariable);
+   		
+   		accountManagerExtension objExtension =  new accountManagerExtension();
+   		
+   		list<Account> AccountList = objExtension.getLstAccount();
+   		system.debug(AccountList);
+   		list<Contact> ContactList = objExtension.getLstContact();
+   		system.debug(ContactList);
+   		
+   		objExtension.deleteAccount();
+   		
+   		List<Account> AccListNew = new List<Account>([select id, name, accountnumber from account]);	
+   		for(account account: AccListNew)
+   		{
+   			for(account account2 : acclist)
+   			{
+   				system.assert(acc2.id,acc.id,'error');
+   			}
+   		}
+   		
+    }
+}

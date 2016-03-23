@@ -1,0 +1,16 @@
+@isTest
+private class TestClassAccountManager {
+	
+		Account acc ;
+		for(integer i=0 ;i<=10 ;i++)
+		{
+			acc= new Account(Name);
+		}
+
+		/*
+		ApexPages.StandardController sc = new ApexPages.standardController(obj_invoive);
+   		LineItemExtension objExtension =  new LineItemExtension(sc);
+   		list<Line_item__c> lstlabour = objExtension.getListLabor();
+   		system.debug(lstlabour);
+   		*/ 
+}

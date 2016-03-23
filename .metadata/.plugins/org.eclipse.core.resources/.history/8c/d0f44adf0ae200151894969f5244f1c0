@@ -1,7 +1,0 @@
-public with sharing class AdvancedConcepts {
-    list<Account> AccountSet = new list<Account>();
-	AccountSet = [SELECT Name,accountNumber FROM account WHERE CreatedDate = today];	
-	system.debug(leadset);
-    
-    
-}

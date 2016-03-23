@@ -1,0 +1,68 @@
+@isTest
+private class TestClassLeadConsults 
+{
+  static testMethod void validateTestClassLeadConsults()
+    {
+        //list<lead> listlead = new list<lead>();
+        lead leads = new lead(name='test',
+        					  company='eternus solutions',
+                              NumberOfEmployees=3,   
+                              Email='web@gmail.com',
+                              Website='web.com',
+                              convert_to__c='Consult',
+                              AnnualRevenue=200000);
+           
+        insert(leads); 
+           
+        Test.startTest();
+      
+        PageReference pageRef = Page.consults;
+        Test.setCurrentPage(pageRef);
+        ApexPages.Standardcontroller sc = new ApexPages.Standardcontroller(leads);
+        ApexPages.currentPage().getParameters().put('Id',leads.id);
+        
+        ConsultsExtensions objLeadExt = new ConsultsExtensions(new ApexPages.StandardController(leads));
+       
+        objLeadExt.insertRecords();
+        //objExtension.oppid='00628000007oNaN'; 
+        List<consults__c> listConsult = new List<consults__c>([select id from consults__c]); 
+        listOpportunity.size();
+        system.assertEquals(1,listConsult.size(), 'assert successful'); 
+        
+        Test.stopTest();
+        
+    }
+    static testMethod void validateTestClassLeadOpportunity()
+    {
+        //list<lead> listlead = new list<lead>();
+        lead leads = new lead(name='test',
+        					  company='eternus solutions pvt ltd.',
+                              NumberOfEmployees=3,   
+                              Email='web12@gmail.com',
+                              Website='web12.com',
+                              convert_to__c='Opportunity',
+                              AnnualRevenue=200000);
+           
+        insert(leads); 
+           
+        Test.startTest();
+      
+        PageReference pageRef = Page.consults;
+        Test.setCurrentPage(pageRef);
+        ApexPages.Standardcontroller sc = new ApexPages.Standardcontroller(leads);
+        ApexPages.currentPage().getParameters().put('Id',leads.id);
+        
+        ConsultsExtensions objExtension = new ConsultsExtensions(new ApexPages.StandardController(consult));
+       
+        objLeadExt.insertRecords();
+        //objExtension.oppid='00628000007oNaN'; 
+        List<Opportunity> listOpportunity = new List<Opportunity>([select id from opportunity]); 
+        listOpportunity.size();
+        system.assertEquals(1,listOpportunity.size(), 'assert successful'); 
+        
+        Test.stopTest();
+        
+    }
+    
+    
+}

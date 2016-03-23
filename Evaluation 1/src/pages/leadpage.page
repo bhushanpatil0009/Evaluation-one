@@ -1,0 +1,12 @@
+<apex:page standardController="lead" extensions="LeadExtensions" action="{!insertRecords}">
+  <apex:form >
+     <apex:pageBlock >
+         <apex:pageBlockTable value="{!lead}" var="le"> 
+              <apex:inputField value="{!le.Name}"/>    
+              <apex:inputField value="{!le.Leadsource}"/>        
+              <apex:inputField value="{!le.Description}"/>        
+         </apex:pageBlockTable>
+         <apex:commandButton value="Convert to opportunity"/>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,27 @@
+@isTest
+private class TestUser {
+   public static testMethod void testRunAs() {
+     
+      // Setup test data
+      // This code runs as the system user
+      Profile p = [SELECT Id FROM Profile WHERE Name='Non-Tech']; 
+      User u = new User(Alias = 'Utest', Email='eternustest@testorg.com', 
+      EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+      LocaleSidKey='en_US', ProfileId = p.Id, 
+      TimeZoneSidKey='America/Los_Angeles', UserName='eternustest@testorg.com');
+
+	 
+
+       System.runAs(u)
+       {
+         // The following code runs as user 'u' 
+         System.debug('Current User: ' + UserInfo.getUserName());
+         System.debug('Current Profile: ' + UserInfo.getProfileId()); 
+         account acc = new account();
+	 	 list<account> accountList = new list<account>([select name,site,fax from account]);
+	     delete accountList;
+       }
+      
+      
+   }
+}
